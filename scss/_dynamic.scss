@@ -1,0 +1,46 @@
+.sticky {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.hide {
+  transform: scale(1, 0);
+  .navbar__navigation__list {
+    opacity: 0;
+  }
+}
+.show {
+  transform: scale(1, 1);
+  .navbar__navigation__list {
+    opacity: 1;
+  }
+}
+.opened {
+  transform: rotate(360deg);
+  .menu__btn__line {
+    background-color: $primary;
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(1) {
+      transform: rotate(45deg) translate3d(10%, 0, 0);
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg) translate3d(10%, 0, 0);
+    }
+  }
+}
+.active {
+  color: $primary;
+  &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background-color: $primary;
+    left: 0;
+    bottom: 0;
+    transition: width 500ms ease-in;
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+.btn-primary {
+  background-color: $primary;
+  color: $text-light;
+  box-shadow: 0 4px 4px #8f8f8f;
+}
+.btn-block {
+  display: block;
+  text-align: center;
+}
