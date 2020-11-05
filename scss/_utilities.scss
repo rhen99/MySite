@@ -6,6 +6,8 @@
 .btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  border: none;
+
   display: inline-block;
 }
 .btn-primary {
@@ -16,4 +18,28 @@
 .btn-block {
   display: block;
   text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+.form-control {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  border: 1px solid #ddd;
+  &:focus {
+    outline: 1px solid $primary;
+  }
+}
+textarea.form-control {
+  resize: none;
+  height: 80px;
+}
+.form-group {
+  margin: 1rem 0;
+}
+.input-text {
+  display: inline-block;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: #8f8f8f;
 }

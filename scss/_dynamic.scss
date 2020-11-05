@@ -41,6 +41,12 @@
     background-color: $primary;
     left: 0;
     bottom: 0;
-    transition: width 500ms ease-in;
+    transition: width 300ms;
   }
+}
+.opened_modal {
+  animation: modalDragDown 300ms ease-in forwards;
+}
+.show_contact {
+  display: block;
 }

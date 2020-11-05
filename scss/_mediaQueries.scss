@@ -1,0 +1,181 @@
+@media (min-width: 768px) {
+  .showcase {
+    &__container {
+      flex-direction: row;
+    }
+    &__actions {
+      &__bg {
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 105%;
+        clip-path: polygon(65% 0, 100% 0, 100% 100%, 33% 100%);
+      }
+    }
+    &__text {
+      text-align: left;
+      h1 {
+        font-size: 3rem;
+      }
+      h6 {
+        font-size: 1rem;
+      }
+    }
+  }
+  .blog {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar {
+    height: 80px;
+    .menu__btn {
+      display: none;
+    }
+    &__container {
+      height: 100%;
+    }
+    &__logo {
+      flex: 1;
+      display: flex;
+      padding: 0;
+      height: 100%;
+      align-items: center;
+    }
+    &__navigation {
+      position: static;
+      transform: scale(1);
+      flex: 1;
+      &__list {
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      &__link {
+        padding: 0.8rem 1rem;
+      }
+    }
+    &__container {
+      display: flex;
+      width: 100%;
+    }
+  }
+  .hide {
+    .navbar__navigation__list {
+      opacity: 1;
+    }
+  }
+  .showcase {
+    height: 50vh;
+    &__text {
+      text-align: left;
+      h1 {
+        font-size: 3.5rem;
+      }
+      h6 {
+        font-size: 1.5rem;
+      }
+    }
+    &__actions {
+      &__bg {
+        width: 115%;
+      }
+    }
+  }
+  .services {
+    &__columns {
+    }
+    &__title {
+      font-size: 3rem;
+    }
+    &__grid {
+      height: 800px;
+    }
+  }
+  .about__arhen {
+    &__title {
+      font-size: 3rem;
+    }
+    &__sub-title {
+      font-size: 2rem;
+    }
+  }
+  .blog {
+    &__title {
+      font-size: 3rem;
+    }
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .contact {
+    &__modal {
+      width: 700px;
+    }
+  }
+  .footer {
+    padding: 1rem;
+    &__content {
+      font-size: 1rem;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .showcase {
+    height: 70vh;
+    &__text {
+      h1 {
+        font-size: 4rem;
+        width: 70%;
+      }
+    }
+    &__actions {
+      &__bg {
+        width: 110%;
+      }
+    }
+  }
+  .services {
+    &__columns {
+      flex-direction: row;
+    }
+    &__left {
+      flex: 1;
+      text-align: left;
+      padding: 0 0.5rem;
+    }
+    &__right {
+      flex: 1;
+    }
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+      height: 100%;
+    }
+  }
+  .about__arhen {
+    &__img {
+      width: 300px;
+      height: 300px;
+    }
+    &__columns {
+      padding: 3rem 0;
+      flex-direction: row;
+    }
+    &__left {
+      padding: 0 4rem;
+    }
+    &__right {
+      flex: 1;
+      text-align: left;
+    }
+  }
+}
+@media (min-width: 1440px) {
+}
