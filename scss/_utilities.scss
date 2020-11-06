@@ -36,10 +36,18 @@ textarea.form-control {
 }
 .form-group {
   margin: 1rem 0;
+  label {
+    display: inline-block;
+    margin: 0.5rem 0;
+  }
 }
 .input-text {
   display: inline-block;
   margin: 0.5rem 0;
   font-weight: 600;
   color: #8f8f8f;
+}
+.emphasized {
+  color: $primary;
+  font-weight: 700;
 }
