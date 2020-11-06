@@ -172,7 +172,7 @@
                     <a href="#" class="close_modal"><i class="fas fa-times"></i> Close</a>
                 </div>
                 <div class="contact__modal__body">
-                    <form action="#" class="contact__form">
+                    <form action="POST" class="contact__form" data-netlify="true">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" class="form-control" id="name" name="name">
@@ -190,6 +190,11 @@
                             <label for="message">Your Message</label>
                             <textarea name="message" id="message" class="form-control"></textarea>
                 
+                        </div>
+                        <div class="form-group">
+                            <div data-netlify-recaptcha="true">
+
+                            </div>
                         </div>
                         <input type="submit" value="Send Message" class="btn btn-primary btn-block">
                     </form>
